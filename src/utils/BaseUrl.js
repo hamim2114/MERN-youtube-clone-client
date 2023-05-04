@@ -1,7 +1,4 @@
-import axios from "axios";
 
-const api = axios.create({
-  baseURL: 'https://litetube-server.vercel.app/api'
-})
+export const MAIN_URL = 'https://litetube-server.vercel.app'
 
-export default api;
+

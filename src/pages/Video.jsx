@@ -191,7 +191,7 @@ const Video = () => {
                      ) : (
                         <ThumbUpOutlinedIcon />
                      )}{' '}
-                     {video.likes.length}
+                     {video.likes?.length}
                   </Button>
                   <Button onClick={handleDislike}>
                      {video.dislikes?.includes(currentUser?._id) ? (
@@ -199,7 +199,7 @@ const Video = () => {
                      ) : (
                         <ThumbDownOffAltOutlinedIcon />
                      )}{' '}
-                     {video.dislikes.length}
+                     {video.dislikes?.length}
                   </Button>
                   <Button>
                      <ReplyOutlinedIcon /> Share

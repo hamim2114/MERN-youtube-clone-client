@@ -39,7 +39,7 @@ const Text = styled.span`
 
 const Comment = ({ comment }) => {
    const [channel, setChannel] = useState({});
-console.log(channel)
+
    useEffect(() => {
       const fetchUser = async () => {
          try {
