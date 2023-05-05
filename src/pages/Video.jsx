@@ -21,6 +21,7 @@ import {
 import { format } from 'timeago.js';
 import { subscription } from '../redux/userSlice';
 import Recomendation from '../components/Recomendation';
+import Loader from '../components/Loader';
 
 const Container = styled.div`
    display: flex;
@@ -127,7 +128,7 @@ const Video = () => {
    const path = useLocation().pathname.split('/')[2];
    const [channel, setChannel] = useState({});
    const { currentVideo: video } = useSelector((state) => state.video);
-   const { currentUser } = useSelector((state) => state.user);
+   const { currentUser, loading } = useSelector((state) => state.user);
 
    useEffect(() => {
       const fetchVideo = async () => {

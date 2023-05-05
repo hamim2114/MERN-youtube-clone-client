@@ -48,7 +48,7 @@ const Item = styled.div`
   align-items: center;
   gap: 20px;
   cursor: pointer;
-  padding: 7.5px 0px;
+  padding: 3px 0px;
 
   &:hover {
     background-color: ${({ theme }) => theme.soft};
